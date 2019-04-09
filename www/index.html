@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>Tourists Attractions</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<p>Pick one</p>			
+		<a href="#popupMasuria" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/masuria.jpg" style="width:30%"></a>
+		<a href="#popupPomerania" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/pomerania.jpg" style="width:30%"></a>
+		<a href="#popupTatry" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/tatry.jpg" style="width:30%"></a>
+
+		<div data-role="popup" id="popupMasuria" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/masuria.jpg" style="max-height:512px;">
+		</div>
+		
+		<div data-role="popup" id="popupPomerania" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/pomerania.jpg" style="max-height:512px;">
+		</div>
+		
+		<div data-role="popup" id="popupTatry" data-overlay-theme="b" data-theme="b" data-corners="false">
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/tatry.jpg" style="max-height:512px;">
+		</div>
+		
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>(c) Kamil Michalik</h1>
+		</div> 
+		</div>
+	</body>
+</html>
